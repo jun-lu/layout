@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="none" />
+<title>后台布局模型</title>
+
+<link  rel="stylesheet" href="css/admin.css"/>
+
+</head>
+
+<body>
+
+<div id="doc" class="y-t3">
+	<div id="hd">hd</div>
+    <div id="bd">
+    	<div id="bd-in" class="clear">
+        	<div class="main">
+            	<div class="main-in">
+                main<br/>
+                <button onclick="change('y-t1')">布局1</button>
+                <button onclick="change('y-t2')">布局2</button>
+                <button onclick="change('y-t3')">布局3</button>
+                <br/>
+                1:侧栏在左，高度自适应<br/>
+                2:侧栏在右，高度自适应<br/>
+                3:侧栏在有，满屏幕<br/>
+                </div>
+            </div>
+        	<div class="side">side</div>
+        </div>
+    </div>
+    <div id="fd">fd</div>
+</div>
+<script type="text/javascript">
+	function change(className){
+		document.getElementById('doc').className = className;
+	}
+</script>
+</body>
+</html>
