@@ -19,7 +19,7 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif; text-align:center;}
 .y-t1 .y-main .y-g{margin-right:190px;}/*与侧栏空隙为10px*/
 
 /* 侧栏在左边 */
-.y-t2 {width:1000px;}
+.y-t3 {width:1000px;}
 .y-t2 .y-b{float:left;width:180px;}
 .y-t2 .y-u{width:49.3%;}
 .y-t2 .first{width:49.3%;}
@@ -27,7 +27,7 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif; text-align:center;}
 .y-t2 .y-main .y-g{margin-left:190px;}
 
 /* 没有侧栏 */
-.y-t3 {}
+.y-t3 {width:860px;}
 .y-t3 .y-b{display:none;}
-.y-t3 .y-u{width:49.3%;}
-.y-t3 .first{width:49.3%;}
+.y-t3 .y-u{width:310px;}/* 860-540-10 = 310*/
+.y-t3 .first{width:540px;}
