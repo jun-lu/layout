@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>blue master</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			a{text-decoration:none;color:#606574;}
+			a:hover{text-decoration:underline;color:#6A7796;}
+			.ml-10{margin-left:10px;}
+			html{background:url(images/body_bg.png) repeat 0 0;}
+			body{background:url(images/body_bg2.png) repeat-x 0 -10px;color:#485766;}
+			.site-intro-in,.top-banner,.copyright-in{width:950px;margin:0 auto;text-align:left;}
+			.top{height:59px;background:url(images/top-banner-bg.jpg) repeat 0 0;}
+					.subscribe{float:left;margin-top:17px;}
+					.search{float:right;margin-top:10pxe;background:url(images/search_input_bg.png) no-repeat 0 0;width:193px;height:30px;}
+					.search-text{border:none;outline:none;padding:0.4em 0.3em;margin:2px 0 0 3px;background:#000;color:#fff;}
+					.search-btn{width:20px;cursor:pointer;border:none;background:none;text-indent:-999em;}
+					
+			#hd{position:relative;height:100px;overflow:hidden;}
+			#fd{background:#000;margin-top:30px;}
+			h1{position:absolute;width:274px;height:56px;margin-top:15px;left:0;}
+			.menu{margin-left:360px;margin-top:35px;}
+				.nav li{float:left}
+				.nav li strong{display:block;padding:.6em 1em .6em .5em;margin-left:.5em;font-size:16px;color:#fff;font-weight:700;}
+				.nav li a{display:block;margin-right:10px;}
+				.nav li a:hover{background:url(images/menu_bg.png) no-repeat 0 0;text-decoration:none;}
+				.nav li a:hover strong{background:url(images/menu_bg.png) no-repeat right 0;}
+				
+			.photo-slide{}
+				.slide-box img{display:block;}
+				.slide-box{height:340px;}
+				.slide-box ul{position:relative;}
+				.slide-box li{position:absolute; left:0;top:0;}
+				.slide-box a{display:block;padding:10px;background:#fff;}
+				.slide-menu{background:url(images/scroll_shadow.png) no-repeat center 0;height:43px;text-align:center;}
+				.slide-menu a{display:inline-block;width:14px;height:14px;margin:10px;background:url(images/scroll_btn.png) no-repeat 0 0;}
+				.slide-menu a.selected{background-position:-14px 0;}
+				
+			.about-info{background:rgba(0,0,0,0.5);padding:20px 0;}
+			.about-us,.blog-updates,.touch{float:left;width:290px;margin-left:20px;background:#1D202A;}
+			
+			.about-info .tit{height:46px;background:url(images/title_nav_bg.png) repeat-x 0 0;}
+			.about-info h2{line-height:46px;font-size:24px;color:#fff;background:url(images/title_icons.png) no-repeat -999px -999px;padding-left:50px;}
+			.about-info .con{padding:20px;}
+				.about-us h2{background-position:0 0;}
+				.blog-updates h2{background-position:0 -46px;}
+				.touch h2{background-position:0 -92px;}
+					.con h3{font-size:18px;color:#fff;margin:10px 0;}
+					.con p{font-size:14px; line-height:1.5em;}
+					
+					.buttons{margin-top:10px;}
+						.btn{display:inline-block;padding:1em;background:#11719F;font-size:14px;color:#fff;font-weight:700;}
+						.btn:hover{color:#fff;}
+			
+			
+			.site-intro{background:#0F131F;}
+			.site-intro-in{padding:30px 0;}
+			.copyright{margin-top:1px;border-top:1px solid #181F31;background:#040507;}
+				.site-intro-dl{width:180px;float:left;}
+				.site-intro-dl dt{font-size:26px;font-weight:700;color:#8C94AC;}
+				.gallery{width:300px;}
+					.photos{border:1px solid #252C3E;background:#191F2F;padding:3px;display:block;float:left;margin:3px;}
+					.photos img{display:block;}
+				.twitter{width:280px;}
+			.copyright-in{padding:20px 0 50px 0;}	
+			.copyright-in .cp{float:left;}
+			.copyright-in .links{float:right;}
+		</style>
+		
+		<!--[if lte IE 6]>
+		<style>
+			#hd h1 img,.slide-menu{behavior:url("iepngfix.htc");}
+			.about-info{background:url(images/main_bg_ie.png) repeat 0 0;}
+			.slide-box li{line-height:0;}
+			.about-us,.blog-updates,.touch{margin:0 10px;}
+		</style>
+		<![endif]-->
+		<script src="js/jquery-1.6.2.min.js"></script>
+	</head>
+	
+	<body>
+		
+	<div class="top">
+		<div class="top-banner">
+			<div class="subscribe">Subscribe to: <a href="#">Posts</a> | <a href="#">Comments</a> | <a href="#">Email</a></div>
+			<div class="search">
+				<input type="text" class="search-text" placeholder="Search Key">
+				<input type="button" value="搜索" class="search-btn">
+			</div>
+		</div>
+
+	</div>	
+	<div id="doc" class="y-t1">
+    
+    	<div id="hd">
+			<h1><a href="#"><img src="images/logo_en.png"></a></h1>
+			<div class="menu">
+				<ul class="nav">
+					<li><a href="#"><strong>Home</strong></a></li>
+					<li><a href="#"><strong>About</strong></a></li>
+					<li><a href="#"><strong>Portfolio</strong></a></li>
+					<li><a href="#"><strong>Blog</strong></a></li>
+					<li><a href="#"><strong>Contact</strong></a></li>
+					<li><a href="#"><strong>Download</strong></a></li>
+				</ul>
+			</div>
+        </div>
+    	<div id="bd">
+			<div class="y-main">
+				<div class="photo-slide">
+					<div class="slide-box" id="slide">
+							<ul>
+								<li style="z-index:5;"><a href="#"><img src="images/banner1.jpg" /></a></li>
+								<li style="z-index:4;"><a href="#"><img src="images/banner2.jpg" /></a></li>
+								<li style="z-index:3;"><a href="#"><img src="images/banner3.jpg" /></a></li>
+								<li style="z-index:2;"><a href="#"><img src="images/banner4.jpg" /></a></li>
+								<li style="z-index:1;"><a href="#"><img src="images/banner5.jpg" /></a></li>
+							</ul>
+					</div>
+					<div class="slide-menu" id="slideMenu">
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="y-main about-info clear-fix">
+				<div class="about-us">
+					<div class="tit"><h2>About iPadMasters</h2></div>
+					<div class="con">
+						<img src="images/temp1.png" />
+						<h3>All About iPad Masters</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor facilisis congue. Lorem sum dolor sit amet, consectetur adippend...</p>
+						<div class="buttons">
+							<a href="#" class="btn">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="blog-updates">
+					<div class="tit"><h2>Our Blog Updates</h2></div>
+					<div class="con">
+						<img src="images/temp1.png" />
+						<h3>All About iPad Masters</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor facilisis congue. Lorem sum dolor sit amet, consectetur adippend...</p>
+						<div class="buttons">
+							<a href="#" class="btn">23 Comments</a><a href="#" class="btn ml-10">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="touch">
+					
+					<div class="tit"><h2>Get In Touch</h2></div>
+					<div class="con">
+						<img src="images/temp1.png" />
+						<h3>All About iPad Masters</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor facilisis congue. Lorem sum dolor sit amet, consectetur adippend...</p>
+						<div class="buttons">
+							<a href="#" class="btn">Learn More</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+        </div>
+    	
+    </div>
+	<div id="fd">
+		<div class="site-intro">
+			<div class="site-intro-in clear-fix">
+			<dl class="site-intro-dl">
+				<dt>About us</dt>
+				<dd><a href="#">Our Company</a></dd>
+				<dd><a href="#">Our Blog</a></dd>
+				<dd><a href="#">Submit a Site</a></dd>
+				<dd><a href="#">Contact Us</a></dd>
+				<dd><a href="#">Help & Terms</a></dd>
+				<dd><a href="#">Read Our FAQ</a></dd>
+			</dl>
+			
+			<dl class="site-intro-dl">
+				<dt>Categories</dt>
+				<dd><a href="#">Trends & Technology</a></dd>
+				<dd><a href="#">Design Companies</a></dd>
+				<dd><a href="#">Design Freelancers</a></dd>
+				<dd><a href="#">Web Portfolios</a></dd>
+				<dd><a href="#">Web Development</a></dd>
+				<dd><a href="#">General Icons</a></dd>
+			</dl>
+			
+			<dl class="site-intro-dl gallery">
+				<dt>From The Gallery</dt>
+				<dd>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a> 
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+					<a href="#" class="photos"><img src="images/temp1.jpg" /></a>
+
+				</dd>
+			</dl>
+			
+			<dl class="site-intro-dl twitter">
+				<dt>Twittwe Updates</dt>
+				<dd>@Dellustrations there is a new designer in town people! It’s amazing How you can do everything inside twitter! http://bit.urds
+2 minutes ago via TweeterDeck</dd>
+			</dl>
+			
+			
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="copyright-in  clear-fix">
+			<div class="cp">© 2010 Copyright iPadMasters Theme. All Rights Reserved.</div>
+			<div class="links">
+			<a href="http://www.xhtmlweaver.com">PSD to xHTML Coded by XhtmlWeaver</a> | <a href="#">Log in</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+			</div>
+			</div>
+		</div>
+	</div>
+		<script>
+			var Slide = function(){
+				this.className = "selected";
+				this.index = 0;
+				this.totIndex = 4;
+				this.photos = $('#slide li');//幻灯片 数组
+				this.stopSlideElement = $('#slide,slideMenu');//停止播放的区域
+				this.menuBtn = $('#slideMenu a');//按钮 数组
+				this.inter;
+				this.init();
+			};
+			Slide.prototype = {
+				constructor:Slide,
+				init:function(){
+					this.menuBtn.eq(this.index).addClass(this.className);
+					this.start();
+					this.eventReg();
+				},
+				eventReg:function(){
+					var _this = this;
+					this.menuBtn.each(function(a){
+						$(this).click((function(i){
+							return function(){
+								_this.stop();
+								_this.run(i);
+								return false;
+							}
+						})(a));
+					});
+					this.stopSlideElement.mouseover(function(){
+						_this.stop();
+					});
+					this.stopSlideElement.mouseout(function(){
+						_this.start();
+					});
+				},
+				start:function(){
+					var _this = this;
+					this.stop();
+					this.inter = setInterval(function(){_this.run();}, 10000);
+				},
+				stop:function(){
+					this.inter && clearInterval(this.inter);
+				},
+				compterIndex:function(){
+					var index = this.index;
+					index = index + 1 > this.totIndex ? 0 : index + 1;
+					this.index = index;
+					return index;
+				},
+				run:function(index){
+					var tIndex = this.index;
+					
+					if(index !== undefined){
+						this.index = index;
+					}else{
+						index = this.compterIndex();
+					}
+					this.menuBtn.eq(tIndex).removeClass(this.className);
+					this.menuBtn.eq(index).addClass(this.className);
+					this.photos.eq(tIndex).fadeOut(1000);
+					this.photos.eq(index).fadeIn(1000);
+				}
+			};
+			
+			var c = new Slide();
+		</script>
+	</body>
+</html>

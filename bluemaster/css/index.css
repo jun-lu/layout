@@ -1,0 +1,33 @@
+﻿/* 必须 */
+body{font:13px/1.231 arial,helvetica,clean,sans-serif; text-align:center;}
+#doc{margin:0 auto; text-align:left;}
+
+#doc{}/* 网页宽度 width:100%;*/
+#bd,#hd,.clear-fix{*zoom:1;}
+#bd:after,.clear-fix:after{content:"\20";display:block;height:0;clear:both;visibility:hidden;}
+
+.y-main{width:100%;}
+.y-u{float:right;}
+.first{float:left;}
+
+/* 侧栏在右边 */
+.y-t1 {width:950px;}
+.y-t1 .y-b{float:right;width:180px;}/* 侧栏宽度 */
+.y-t1 .y-u{width:49.3%;}  /*中间两栏宽度*/
+.y-t1 .first{width:49.3%;}  /*中间两栏宽度*/
+.y-t1 .y-main{float:left;margin-right:-190px;} /*与侧栏空隙为10px*/
+.y-t1 .y-main .y-g{margin-right:190px;}/*与侧栏空隙为10px*/
+
+/* 侧栏在左边 */
+.y-t2 {width:1000px;}
+.y-t2 .y-b{float:left;width:180px;}
+.y-t2 .y-u{width:49.3%;}
+.y-t2 .first{width:49.3%;}
+.y-t2 .y-main{float:right;margin-left:-190px;}
+.y-t2 .y-main .y-g{margin-left:190px;}
+
+/* 没有侧栏 */
+.y-t3 {}
+.y-t3 .y-b{display:none;}
+.y-t3 .y-u{width:49.3%;}
+.y-t3 .first{width:49.3%;}
