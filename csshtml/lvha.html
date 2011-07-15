@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="index,follow" />
+<title>a标签的伪类</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<style type="text/css">
+	a:link{color:#f30;}
+	a:visited{color:#000;}
+	a:hover{color:#fff;}
+	a:active{color:#f99;}
+</style>
+
+</head>
+
+<body>
+	<p>首先伪类的特殊性（应用优先级）是同样的，所以后出现的伪类会覆盖先出现的伪类（同时激活）</p>
+	<p>lvha 规则是由于CSS特殊性导致，css特殊性有一个按顺序的规则（同一条css规则，后出现会覆盖前面的同样规则）</p>
+	<p>在这里，比如把hover放在active后面，那么实际你在激活（active）链接的时候就触发了hover伪类，hover在后面覆盖了active的颜色，所以始终无法看到active的颜色</p>
+	<P>如果把visited放在hover的后面，那么已经访问过的链接始终触发visited伪类，根据第一条会覆盖hover里面的颜色。</p>
+	<p>其实 link  visited 这两个伪类，并不需要顺序关系。（他们两的位置可以交换）</p>
+	<a href="#abcde">正常的链接</a>
+	<a href="http://www.baidu.com">访问过的</a>
+</body>
+</html>
