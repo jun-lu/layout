@@ -1,4 +1,4 @@
-﻿属性 @申明变量  _默认值 1
+﻿属性 @申明变量  _默认值
 @borderStyle:[_none|dotted|dashed|double|groove|ridge|inset|outset]
 @borderWidth:[_medium|thim|thick|length]
 font-[family|size|style|weight]:[ [name] | [_medium|length] | [normal|italic|oblique] | [_normal|bold|bolder|lighter|400|700] ]
