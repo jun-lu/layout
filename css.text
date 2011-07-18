@@ -1,0 +1,54 @@
+﻿属性 @申明变量  _默认值
+@borderStyle:[_none|dotted|dashed|double|groove|ridge|inset|outset]
+@borderWidth:[_medium|thim|thick|length]
+font-[family|size|style|weight]:[ [name] | [_medium|length] | [normal|italic|oblique] | [_normal|bold|bolder|lighter|400|700] ]
+line-height: _normal | length
+text-decoration: _none | underline | blink | overline | line-through
+text-transform: _none | capitalize | uppercase | lowercase 
+text-overflow : _clip | ellipsis
+white-space: _normal | pre | nowrap 
+overflow: _visible | auto | hidden | scroll
+visibility: _inherit | visible | hidden
+position: _static | absolute | fixed | relative
+text-indent: length
+vertical-align: auto | _baseline | sup | super | top | text-top | middle bottom | text-bottom
+text-align: _left | right | center | justify
+word-break: _normal | break-all | keep-all
+word-wrap : _normal | break-word
+background-[color|image|repeat|attachment|position]: [#00000|_transparent} | [url()|_none] | [_repeat|no-repeat|repeat-[x|y]] | [_scroll|fixed] | [top|bottom|center] 
+z-index: _auto | number
+clear: _none | left | right | both
+float: _none | left | right
+display: none | block | inline-block | inline | inline-table | list-item | run-in | table | table-caption | table-call | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group
+margin-[top|bottom|left|right]: _auto | number
+padding-[top|bottom|left|right]: length
+outline-[color | style | width]: color | _invert | [@borderStyle] | [@borderWidth] 
+border-[top|bottom|left|right]-[color|style|width]: color | @borderStyle | @borderWidth
+list-style-[image|position|type]:[ [_none|url()] | [_outside|inside] | [_disc|circle|square|decimal|lower-roman|upper-alpha|none] ]
+cursor:auto|all-scroll|col-resize|crosshair|default|hand|move|help|no-drop|not-allowed|pointer|progress|row-resize|text|vertical-text|wait|url
+zoom:number
+filter:alpha(opacity=number)
+opacity:number
+content:string
+
+伪类
+:link | :hover | :active | :visited | :first-child | :first | :focus
+:after | :first-letter | :first-line | :before
+
+规则
+@import | @charset | @font-face | @page | @media
+
+申明
+!important
+
+单位
+px | em | ex | pt | pc |in | mm | cm 
+rgb(R,G,B) | #rrggbb | ColorName
+deg | grad |rad 
+s | ms
+Hz | kHz
+
+设备
+all | aural | braille | embossed | handheld | print | projection | screen | tty | tv
+
+
