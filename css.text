@@ -3,23 +3,26 @@
 @borderWidth:[_medium|thim|thick|length]
 font-[family|size|style|weight]:[ [name] | [_medium|length] | [normal|italic|oblique] | [_normal|bold|bolder|lighter|400|700] ]
 line-height: _normal | length
-text-decoration: _none | underline | blink | overline | line-through
+direction:ltr | rtl | inhreit
+text-decoration: _none | underline | overline | line-through | blink
 text-transform: _none | capitalize | uppercase | lowercase 
 text-overflow : _clip | ellipsis
-white-space: _normal | pre | nowrap 
+text-align: _left | right | center | justify
+text-shadow: _none | color length length length | inherit
+text-indent: length
+white-space: _normal | pre | nowrap | pre-wrap | pre-line |inherit
 overflow: _visible | auto | hidden | scroll
 visibility: _inherit | visible | hidden
 position: _static | absolute | fixed | relative
-text-indent: length
 vertical-align: auto | _baseline | sup | super | top | text-top | middle bottom | text-bottom
-text-align: _left | right | center | justify
 word-break: _normal | break-all | keep-all
 word-wrap : _normal | break-word
+word-spacing:normal | length;
 background-[color|image|repeat|attachment|position]: [#00000|_transparent} | [url()|_none] | [_repeat|no-repeat|repeat-[x|y]] | [_scroll|fixed] | [top|bottom|center] 
 z-index: _auto | number
 clear: _none | left | right | both
 float: _none | left | right
-display: none | block | inline-block | inline | inline-table | list-item | run-in | table | table-caption | table-call | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group
+display: none | block | inline-block | _inline | inline-table | list-item | run-in | table | table-caption | table-call | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group
 margin-[top|bottom|left|right]: _auto | number
 padding-[top|bottom|left|right]: length
 outline-[color | style | width]: color | _invert | [@borderStyle] | [@borderWidth] 
