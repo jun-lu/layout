@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="index,follow" />
+<title>a标签的伪类</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<style type="text/css">
+	.box{border:1px solid #ccc;position:absolute;}
+	/*貌似IE6 7写CSS不管用 用JS则没有问题 position:absolute;clip:rect(auto,50px,50px,auto);*/
+</style>
+
+</head>
+
+<body>
+
+	<img id="img1" src="http://www.w3school.com.cn/i/eg_sun.gif" class="box"/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<input type="button" value="裁剪" onclick="clipImage()" /> <input type="button" value="完整" onclick="Image()" />
+	<script>
+		function clipImage(){
+			document.getElementById("img1").style.clip="rect(auto,70px,70px,auto)";
+		}
+		function Image(){
+			document.getElementById("img1").style.clip="rect(auto,auto,auto,auto)";
+		}
+	</script>
+</body>
+</html>
