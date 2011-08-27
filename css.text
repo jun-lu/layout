@@ -33,6 +33,7 @@ zoom:number
 filter:alpha(opacity=number)
 opacity:number
 content:string
+border-collapse:collapse;合并边框用于table
 
 伪类
 :link | :hover | :active | :visited | :first-child | :first | :focus
