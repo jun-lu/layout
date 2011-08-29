@@ -8,21 +8,26 @@
 	<link rel="stylesheet" href="css/layout.css" />
 	
 	<style rel="stylesheet">
-		#doc{background:#fff url(images/bg_1.jpg) no-repeat center 0;min-width:1000px;}
+		#doc{background:#fff url(images/bg_1.jpg) no-repeat center 0;min-width:800px;}
 		.fd{background:#fff;}
-		
-		h1{background:url(images/logo.jpg) no-repeat 0 0; height:69px; width:130px;border-radius:3px;}/*margin-bottom:-50px;*/
+		.hd{height:70px;}
+		h1{display:inline-block;background:url(images/logo.jpg) no-repeat 0 0; height:69px; width:130px;border-radius:3px;margin-bottom:-124px;}
 		
 		
 		
 		.player{background:#3A3A3A; height:70px;}
 		
-		.channel-item{background:rgba(59,39,51,.9);margin:10px 0; line-height:2.5em;color:#fff;cursor:pointer;}
-		.channel-item:hover{background:rgba(255,255,255,.9);color:#000;}
+		.channel-list{width:130px;margin-top:120px; }
+		.channel-item{background:rgba(59,39,51,.9);margin:5px 0; line-height:2.5em;color:#fff;cursor:pointer;text-align:center;position:relative;}
+		.channel-item:hover,.channel-list .selected{background:rgba(255,255,255,.9);color:#000;}
+		.channel-item .s{display:inline-block;border:10px dashed transparent;border-left:10px solid transparent;position:absolute;right:-20px; top:10px;}
+		.channel-item:hover .s, .selected .s{border-left:10px solid rgba(255,255,255,.9);}
 		
-		.play-info{text-align:center;padding:30px 0;}
+		.play-info{text-align:center;padding:30px 0 50px 0;}
 		.play-tit{color:#F1726B;}
 		.play-auther{color:#B3B3B3;font-size:0.8em;margin-top:20px;}
+		.world{background:rgba(255,255,255,.9);padding:10px;margin:50px 0;line-height:1.8em;}
+		.world p{ text-indent:2em;}
 		
 		
 		.copyright{bottom:0;border-top:1px dashed #EAEAEA; height:50px;width:100%;padding-top:10px;font-size:0.8em;}
@@ -39,18 +44,24 @@
 			<h1></h1>
 		</div>
 		<div class="bd">
+		
 			<div class="y-main">
 				<div class="y-g">
 					<div class="player"></div>
-					<div style="height:400px;"></div>
+					<div class="world">
+						<p>对于习惯将文字用声音表达的我，也总是在不停地记录些什么。可能是马上要毕业的缘故，想来还有很多的事情都还没有完成。是的，就是那种，你感觉要离开一个地方久了，感觉不知道还需要过多久，你才会再次来到这里。我们总是那么习惯依恋的生命。依恋让我们不免地惆怅，惋惜，也叹息。只是生活也许就是这样一个个的驿站连接着，直到尽头，所以，我们还是要离开。走向新的驿站。</p>
+
+						<p>我曾经看到过一个记者写的一句话。她说她从不留恋过往，工作如是，生活如是，爱情也是这样。我并不想认同或者否认她什么。只是觉得，刹那间，会惊觉，哦，原来每个人的态度是有这样的千奇百怪的，与众不同的呢。</p>
+					</div>
 				</div>
 			</div>
 			<div class="y-side">
+				
 				<div class="channel-list">
-					<div class="channel-item"><strong>情感</strong></div>
-					<div class="channel-item"><strong>校园</strong></div>
-					<div class="channel-item"><strong>电影</strong></div>
-					<div class="channel-item"><strong>音乐</strong></div>
+					<div class="channel-item selected"><strong>情感频道</strong><s class="s"></s></div>
+					<div class="channel-item"><strong>校园频道</strong><s class="s"></s></div>
+					<div class="channel-item"><strong>电影频道</strong><s class="s"></s></div>
+					<div class="channel-item"><strong>音乐频道</strong><s class="s"></s></div>
 				</div>
 			</div>
 			
