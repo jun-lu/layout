@@ -1,0 +1,10 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello Jun</title>
+</head>
+<body>
+	
+</body>
+</html>
