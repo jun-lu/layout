@@ -1,0 +1,46 @@
+﻿@color:#f30;
+/*变量的使用*/
+.box{background-color:@color;}
+.red{
+	@color:#000;/*变量的作用域*/
+	background-color:@color;
+}
+
+/*mixin 混入*/
+.box2{
+	border:1px solid @color;
+	.box;/*引用BOX1*/
+}
+
+/*经过测试 参数带入的方式貌似有问题*/
+.border-radius( @radius: 3px ) {
+-webkit-border-radius: @radius;
+-moz-border-radius: @radius;
+border-radius: @radius;
+}
+
+/* 命名空间*/
+#hello{
+	.box{background:#000;}
+}
+
+#world{
+	.box{background:#f30;}
+}
+
+.helloWorld{
+	#world .box; //应用一个命名空间
+}
+
+/*字符串插入*/
+@base_url:'http://www.qianduan.net';
+.a{background-image: url("@{base_url}/images/background.png");}
+
+/*转义 对于无法识别的规则进行直接 转义  实际测试无法通过
+.class {
+	filter:~"progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+}
+/*实际上将会输出下面的代码: 
+.class {
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}*/
