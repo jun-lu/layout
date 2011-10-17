@@ -33,6 +33,7 @@ zoom:number
 filter:alpha(opacity=number)
 opacity:number
 content:string
+letter-spacing:
 border-collapse:collapse;合并边框用于table
 
 伪类
