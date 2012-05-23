@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>hello</title>
+	<link rel="stylesheet" href="css/test.layout.css" />
+	<style type="text/css">
+		.container{margin:0 auto;}
+		.container1{width:940px;margin:0 auto;}
+			.top{background:#222; height:50px;}
+			.banner{background:#f5f5f5;padding:20px;margin:10px 0;}
+			.footer{border-top:1px solid #ccc;margin-top:10px;}
+	</style>
+</head>
+<body>
+	
+	<div class="container" style="width:1000px;">
+	
+	<div class="row">
+		<div class="block span17">
+		<h2>布局1</h2>
+		
+			<div class="container container1">
+				<div class="top">top</div>
+				<div class="banner">hello world</div>
+				<div class="row">
+					<div class="block span4" style="background:#ccc;" >11</div>
+					<div class="block span12" style="background:#000;" >22</div>
+				</div>
+				<div class="footer">
+					footer
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<h2>布局2</h2>
+		<div>
+			<div class="container container1">
+				<div class="top">top</div>
+				<div class="banner">hello world</div>
+				<div class="row">
+					<div class="block span5" style="background:#ccc;" >11</div>
+					<div class="block span5" style="background:#000;" >22</div>
+					<div class="block span6" style="background:#000;" >33</div>
+				</div>
+				<div class="footer">
+					footer
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="row">
+		<h2>forms</h2>
+		<div class="block span17">
+			<form action="">
+				<fieldset>
+					<legend class="offset3">input selected textarea</legend>
+					<div class="form-item">
+						<label class="span3" for="xxinput">input:</label>
+						<div class="input"><input type="text" class="input-text" id="xxinput" placeholder="input" /></div>
+					</div>
+					<div class="form-item">
+						<label class="span3" for="xxinput">input disable:</label>
+						<div class="input"><input type="text" class="input-text disabled" id="xxinput" placeholder="input" disabled /></div>
+					</div>
+					<div class="form-item">
+						<label class="span3" for="xxinput">select:</label>
+						<div class="input">
+							<select name="" id="">
+								<option value="hello">hello</option>
+									<option value="world">world</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-item">
+						<label class="span3" for="xxinput">select disable:</label>
+						<div class="input">
+							<select name="" id="" disabled >
+								<option value="hello">hello</option>
+									<option value="world">world</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label class="span3" for="xxinput">checkbox disable:</label>
+						<div class="input">
+							<label for="abcde"><input type="checkbox"  id="abcde" value="1" /> checkbox one</label>
+							<!--IE6 label 必须写for 其他高级浏览器如果label包含了 input[type="checkbox"] for可以省略，但是不能为空-->
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label class="span3" for="xxinput">button,
+						input[type="button"]</label>
+						<div class="input">
+							<input type="button" class="btn" value="提交" />
+							<input type="button" class="btn disabled" value="提交" disabled />
+
+							<button class="btn">提交</button>
+							<button class="btn disabled" disabled >提交</button>
+						</div>
+					</div>
+					
+					<div class="form-item">
+						<label class="span3" for="xxinput">button,
+						input[type="button"]</label>
+						<div class="input">
+							<input type="button" class="btn primary" value="提交" />
+
+							<button class="btn info">提交</button>
+							<button class="btn disabled" disabled >提交</button>
+						</div>
+					</div>
+					
+					
+				</fieldset>
+			</form>
+			<div class="form"></div>
+		</div>
+	</div>
+	
+	</div>
+</body>
+</html>
